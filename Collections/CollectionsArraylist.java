@@ -6,7 +6,7 @@ import java.util.*;
 public class CollectionsArraylist {
     
     public static void main(String[] args) {
-        List<Integer> list = new ArrayList<>();
+        List list = new ArrayList<>();
         
         // List<String> listStrings = new ArrayList<>();
         ArrayList<String> arrayString = new ArrayList<String>();
@@ -42,11 +42,15 @@ public class CollectionsArraylist {
             System.out.println(li.hasPrevious());
         }
 
+        arrayString.add("Name");
+        arrayString.add("Age");
+        arrayString.add("City");
+        System.out.println(arrayString);
+        list.addAll(0,arrayString);
 
-        
+        System.out.println(list);
 
-
-
-
+        // list.removeAll(arrayString);
+        // System.out.println(list);
     }
 }
